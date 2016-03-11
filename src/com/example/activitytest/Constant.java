@@ -18,7 +18,7 @@ public class Constant {
     public static  ArrayList<Integer> horizontal_images = new ArrayList<Integer>();
     //将资源id装进集合。
     static {
-        for (int i=0;i<horizontal_icons.length;i++){
+        for (int i=0;i<horizontal_icons.length;i++){//将资源id循环加入到集合中。
             horizontal_images.add(horizontal_icons[i]);
         }
     }
