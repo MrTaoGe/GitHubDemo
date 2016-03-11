@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_open_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open the third activity" />
+
+    <Button
+        android:id="@+id/btn_open_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开popupwindow" />
+
+    <com.example.activitytest.MarqueeTextView
+        android:id="@+id/tv_customer"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true" />
+
+    <com.example.activitytest.MarqueeText
+        android:id="@+id/tv_customer2"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true" />
+
+    <com.example.activitytest.MarqueeText2
+        android:id="@+id/tv_customer3"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true" />
+
+    <com.example.activitytest.ScrollAlwaysTextView
+        android:id="@+id/tv_customer4"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true" />
+
+    <AdapterViewFlipper
+        android:id="@+id/avf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:flipInterval="5000" >
+    </AdapterViewFlipper>
+
+    <ViewFlipper
+        android:id="@+id/vf_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </ViewFlipper>
+
+    <TextView
+        android:id="@+id/tv_stretchy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>

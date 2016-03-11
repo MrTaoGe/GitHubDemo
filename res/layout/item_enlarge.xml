@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root_area"
+    android:layout_width="@dimen/DIMEN_428PX"
+    android:layout_height="@dimen/DIMEN_435PX"
+    android:layout_marginLeft="@dimen/DIMEN_8PX"
+    android:layout_marginRight="@dimen/DIMEN_8PX"
+    android:clickable="true"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_parent_arem"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="@dimen/DIMEN_23PX"
+        android:layout_weight="4.0"
+        android:focusable="false"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="4.0"
+            android:background="#000000"
+            android:focusable="false" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_default_bitmap"
+                android:focusable="false" />
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <com.example.activitytest.ScrollAlwaysTextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:background="#000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:textColor="#e0e0e0"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_reflection"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="@dimen/DIMEN_23PX"
+        android:layout_marginTop="@dimen/DIMEN_8PX"
+        android:layout_weight="1.0"
+        android:focusable="false"
+        android:scaleType="fitXY" />
+
+</LinearLayout>
